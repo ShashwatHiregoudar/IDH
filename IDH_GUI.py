@@ -72,17 +72,17 @@ class IDH_Project:
         #root.mainloop()
         #if checkvalidpath(path):
             #print(os.curdir)
-        if not os.path.exists(os.curdir+'/test'):
-            os.mkdir('test')
+        if not os.path.exists(os.curdir+'/GUI_Temp'):
+            os.mkdir('GUI_Temp')
         print(path)
         #os.system('cp '+path+' test/testimg.jpg')
         i = cv2.imread(path)
         i = cv2.resize(i,(350,265))
-        cv2.imwrite("test/testimg.ppm",i)
-        cv2.imwrite("test/testimg.jpg",i)
+        cv2.imwrite("GUI_Temp/testimg.ppm",i)
+        cv2.imwrite("GUI_Temp/testimg.jpg",i)
         #os.system('rm test/testimg.jpg')
 
-        img = PhotoImage(file="test/testimg.ppm")
+        img = PhotoImage(file="GUI_Temp/testimg.ppm")
         self.Canvas1.configure(image=img)
         self.Canvas1.photo = img
         ############################################################################################
@@ -119,7 +119,7 @@ class IDH_Project:
 
             return modelpredictions
 
-        filename = "test/testimg.jpg"
+        filename = "GUI_Temp/testimg.jpg"
         image_size=128
         num_channels=3
         images = []
