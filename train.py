@@ -13,6 +13,7 @@ from tensorflow import set_random_seed
 set_random_seed(2)
 
 
+
 batch_size = 64
 
 #Prepare input data
