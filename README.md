@@ -1,5 +1,6 @@
 # IDH
-MY IMPLEMENTATION
-'''bash
+MY IMPLEMENTATION of 5th sem
+Tkinter GUI
+```bash
 pip install opencv-python
-'''
+```
