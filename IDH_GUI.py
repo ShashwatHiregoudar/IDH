@@ -60,15 +60,15 @@ def checkvalidpath(x):
         print("not a valid path")
 '''
 class IDH_Project:
-    
+    '''The main GUI Class'''
     def viewmapbutton(self, top=None):
         webbrowser.open('https://goo.gl/maps/HCahr9E4PnH2', new=1)
     def aboutus(self):
-        webbrowser.open("file:///home/mllab/Desktop/IDH_TRY/Code-C13/HTML%20PAGE/index.html")
+        webbrowser.open("file://"+os.getcwd()+"/HTML%20PAGE/index.html")
     
     def uploadbuttonpress(self, top=None):
         #root = Tk()
-        path = filedialog.askopenfilename(initialdir="/home/shashwat/Desktop/hackathon_gui/commitee_review/testing_data/", title="Select file", filetypes=((" jpeg files", "*.jpg"),("png files","*.png"),("all files","*.*")))
+        path = filedialog.askopenfilename(initialdir=os.getcwd(), title="Select file", filetypes=((" jpeg files", "*.jpg"),("png files","*.png"),("all files","*.*")))
         #root.mainloop()
         #if checkvalidpath(path):
             #print(os.curdir)
